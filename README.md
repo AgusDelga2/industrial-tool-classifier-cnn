@@ -4,6 +4,15 @@ Este repositorio documenta la refactorización técnica de un proyecto académic
 
 El objetivo de esta versión (2026) fue migrar una implementación base ineficiente hacia un pipeline moderno utilizando **TensorFlow** y **Keras**, resolviendo problemas de gestión de memoria y sobreajuste (*overfitting*).
 
+Estructura del Repositorio
+
+| Carpeta | Contenido |
+|---|---|
+| `notebooks/` | Pipeline de entrenamiento y benchmarking de modelos |
+| `demo/` | Aplicación web de inferencia en tiempo real (Streamlit) |
+
+Como prueba de concepto, el modelo final fue integrado en una demo interactiva de inferencia en tiempo real. Ver [`demo/`](./demo/README.md).
+
 ## Contexto de la Refactorización
 
 El proyecto original (2023) utilizaba métodos manuales de carga de datos que saturaban la memoria RAM y modelos que no generalizaban correctamente. En esta actualización se implementaron las siguientes mejoras técnicas:
@@ -45,6 +54,7 @@ Dado que el rendimiento actual está limitado principalmente por el tamaño del 
 
 1.  **Transfer Learning:** Implementación de arquitecturas pre-entrenadas (MobileNetV2 o ResNet50) para aprovechar características visuales aprendidas y superar el 90% de precisión.
 2.  **Expansión del Dataset:** Recolección de nuevas muestras con variaciones de iluminación y fondo para robustecer la clase "Martillo".
+3.  Se considera como mejora futura la incorporación de un **umbral de confianza mínimo global** previo a la clasificación binaria, que permita al modelo abstenerse de clasificar cuando ninguna clase supera un nivel de certeza aceptable. Esta lógica de "rechazo de muestra" ayudaría a reducir los falsos positivos en condiciones reales de uso, y será evaluada en iteraciones futuras junto con la expansión del dataset y Transfer Learning.
 
 ---
 **Autora:** Agustina Delgado
@@ -98,6 +108,7 @@ Given that current performance is primarily limited by dataset size (~600 images
 
 1.  **Transfer Learning:** Implementation of pre-trained architectures (MobileNetV2 or ResNet50) to leverage learned visual features and surpass 90% accuracy.
 2.  **Dataset Expansion:** Collection of new samples with lighting and background variations to improve robustness for the "Hammer" class.
+3.  A future enhancement under consideration is the incorporation of a **global minimum confidence threshold** prior to binary classification. This would allow the model to abstain from classifying when neither class surpasses an acceptable certainty level. This "sample rejection" logic would help reduce false positives in real-world usage conditions, and will be evaluated in future iterations alongside dataset expansion and Transfer Learning.
 
 ---
 **Author:** Agustina Delgado
