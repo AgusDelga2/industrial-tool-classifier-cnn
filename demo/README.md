@@ -32,7 +32,7 @@ Se evaluaron distintas combinaciones de umbrales. Los valores que mostraron el m
 - Con umbrales más permisivos (ej. 0.55/0.45) se reduce la zona de desconfianza pero aumentan los falsos positivos.
 - La demo requiere conexión estable para la negociación WebRTC (STUN server: `stun.l.google.com`).
 
-> 📸 *( )*
+> <img src="demo_screenshot_martillo.png" width="300"/>
 
 ---
 
@@ -76,7 +76,7 @@ Several threshold combinations were tested. The values that showed the best bala
 - More permissive thresholds (e.g., 0.55/0.45) reduce the uncertainty zone but increase false positives.
 - The demo requires a stable connection for WebRTC negotiation (STUN server: `stun.l.google.com`).
 
-> 📸 *( )*
+> <img src="demo_screenshot_martillo.png" width="300"/>
 
 ---
 
