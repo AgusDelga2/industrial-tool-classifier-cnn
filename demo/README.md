@@ -2,7 +2,7 @@
 
 Como prueba de concepto de inferencia en tiempo real, se desarrolló una aplicación web utilizando **Streamlit** y **streamlit-webrtc**, que permite clasificar herramientas directamente desde la cámara del dispositivo.
 
-#### > 🔗 **[Descargar modelo_herramientas.h5](https://github.com/AgusDelga2/industrial-tool-classifier-cnn/releases/tag/v1.0)**
+#### > 🔗 **[Descargar modelo_herramientas.h5](https://github.com/AgusDelga2/industrial-tool-classifier-cnn/releases/tag/v2.0)**
 
 ### Stack técnico de la demo
 
@@ -46,7 +46,7 @@ Además de las mejoras de modelo mencionadas, se considera como mejora futura la
 
 As a proof of concept for real-time inference, a web application was developed using **Streamlit** and **streamlit-webrtc**, enabling tool classification directly from the device's camera.
 
-#### > 🔗 **[Download modelo_herramientas.h5](https://github.com/AgusDelga2/industrial-tool-classifier-cnn/releases/tag/v1.0)**
+#### > 🔗 **[Download modelo_herramientas.h5](https://github.com/AgusDelga2/industrial-tool-classifier-cnn/releases/tag/v2.0)**
 
 ### Demo Tech Stack
 
